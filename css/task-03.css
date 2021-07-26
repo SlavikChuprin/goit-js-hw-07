@@ -1,9 +1,0 @@
-.gallery-items {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  contain: content;
-  width: 150px;
-  height: 100px;
-
-  margin-right: 10px;
-}
