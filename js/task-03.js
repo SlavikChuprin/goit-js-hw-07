@@ -15,7 +15,10 @@ const images = [
 
 const galleryEl = document.querySelector('#gallery');
 
-const picEl = images.forEach( el => {
+const picEl = images.reduce((acc, el) => {
+  // console.log(el);
+return acc + `<li class= "gallery-items"><img src= ${el.url} class ="image"  alt= "${el.alt}" ></li> `;  
+}, '');
+// console.log(picEl);
 
- const newPic = galleryEl.insertAdjacentHTML('beforeend', `<li class= "gallery-items"><img src= ${el.url} class ="image" , alt= ${el.alt} ></li>`);
-})
+ const newPic = galleryEl.insertAdjacentHTML('beforeend', `${picEl}`);
