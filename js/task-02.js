@@ -13,10 +13,8 @@ const ingredientsEl = document.querySelector ('#ingredients');
 const elem = ingredients.forEach(el => { 
 const liEl = document.createElement('li');
 liEl.textContent = `${el}`;
-console.log(liEl);
-ingredientsEl.appendChild(liEl);
+// console.log(liEl)
+ingredientsEl.append(liEl);
 });
-
-
 
 
