@@ -15,8 +15,6 @@ const createBoxes = () =>{
       boxEl.style.backgroundColor = `rgb(${Math.random()*100}, ${Math.random()*100}, ${Math.random()*100})`;
       boxEl.classList.add('design');  
       galleryEl.append(boxEl);
-      console.log(boxEl);
-    
       boxEl.style.width = `${a+=10}px`;
       boxEl.style.height = `${b+=10}px`;
      

@@ -21,4 +21,4 @@ return acc + `<li class= "gallery-items"><img src= ${el.url} class ="image"  alt
 }, '');
 // console.log(picEl);
 
- const newPic = galleryEl.insertAdjacentHTML('beforeend', `${picEl}`);
+ const newPic = galleryEl.insertAdjacentHTML('beforeend', picEl);
